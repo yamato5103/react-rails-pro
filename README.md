@@ -1,1 +1,1 @@
-# rails_product
+# rails_product_page
