@@ -7,7 +7,9 @@ RUN apt update && apt install -y \
         libpq-dev \
         nodejs \
         postgresql-client \
-        yarn
+        yarn\
+        npm
+RUN npm install -g n && n stable
 
 WORKDIR /product-register
 COPY Gemfile Gemfile.lock /product-register
